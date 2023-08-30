@@ -10,7 +10,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    names = ['a', 'b', 'c']
+    return render_template('home.html', names=names)
 
 
 @app.route('/about')
