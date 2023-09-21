@@ -8,6 +8,7 @@ def home():
 
 @app.route('/add',methods=['POST','GET'])
 def add():
+    
     if request.method == 'POST':
         print(request.form['username'],request.form['rollno'])
         return render_template('home.html')
